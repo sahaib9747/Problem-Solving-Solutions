@@ -1,0 +1,1 @@
+print("NUMBER = %i\nSALARY = U$ %.2f" % (int(input()), int(input()) * float(input())))

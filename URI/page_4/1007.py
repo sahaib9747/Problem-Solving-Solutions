@@ -1,0 +1,1 @@
+print("DIFERENCA = %i" % ((int(input()) * int(input()) - int(input()) * int(input()))))

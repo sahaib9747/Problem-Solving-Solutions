@@ -1,0 +1,1 @@
+print("PROD = %i" % (int(input()) * int(input())))
