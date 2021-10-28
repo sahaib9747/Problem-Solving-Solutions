@@ -5,16 +5,15 @@ class Stack:
         self.top = -1
 
     def push(self, item):
-        if len(self.db) <= self.size-1:
+        if not self.db[self.size-1]:
             self.top += 1
             self.db[self.top] = item
-            print(item)
             return True
         else:
             return 'Stack Overflow'
 
     def pop(self):
-        if self.db:
+        if self.top >= 0:
             data = self.db[self.top]
             self.db[self.top] = False
             self.top -= 1
@@ -35,10 +34,10 @@ my_stack.push(10)
 my_stack.push(20)
 my_stack.push(30)
 my_stack.push(40)
-print(my_stack)
 
 print(my_stack.pop())
 print(my_stack.pop())
 print(my_stack.pop())
 print(my_stack.pop())
 print(my_stack.pop())
+
