@@ -62,7 +62,7 @@ for data in filtered_urls:
         print(f"Response URL: {res.url}")
         break 
     else:
-        print(f"Worong number: {count} url: {url}\n")
+        print(f"Invalid ID: {count} url: {url}\n")
     
     count += 1
 
