@@ -10,7 +10,11 @@ def selection_sort(lst):
         smallest = i 
         for j in range(i+1, len(lst)):
             if lst[j] < lst[smallest]:
-                lst[j], lst[smallest] = lst[smallest], lst[j]
+                smallest = j
+        
+        if lst[i] > lst[smallest]:
+            lst[i], lst[smallest] = lst[smallest], lst[i]
+
     return lst
 
 arr = [10, 1, 2, 4,6, 5, 9, 7]
