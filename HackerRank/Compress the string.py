@@ -13,3 +13,4 @@ while index < len(inp):
     index += x
     x = 1
 print(*lst, sep=" ")
+
